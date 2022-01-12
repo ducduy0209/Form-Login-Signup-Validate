@@ -19,6 +19,7 @@
     z-index: -1;
 }
 
+.container-signup,
 .container-login {
     width: 100vw;
     height: 100vh;
@@ -34,10 +35,12 @@
     width: 40%;
 }
 
+.container-signup .img img,
 .container-login .img img {
     width: 520px;
 }
 
+.container-signup__content,
 .container-login__content {
     display: flex;
     flex-direction: column;
@@ -46,11 +49,13 @@
     width: 60%;
 }
 
+.container-signup__content img,
 .container-login__content img {
     width: 120px;
     padding-bottom: 24px;
 }
 
+.container-signup__content h2,
 .container-login__content h2 {
     font-size: 52px;
     letter-spacing: 1.6px;
@@ -167,9 +172,11 @@ a:hover {
 
 @media screen and (max-width: 64em) {
     .wave,
+    .container-signup .img,
     .container-login .img {
         display: none;
     }
+    .container-signup__content,
     .container-login__content {
         width: 100%;
     }

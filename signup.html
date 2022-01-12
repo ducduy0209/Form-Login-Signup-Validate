@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
 </head>
 
 <body>
     <img class="wave" src="./imgs/wave.png" alt="">
-    <div class="container-login">
+    <div class="container-signup">
         <div class="img">
             <img src="./imgs/bg.svg" alt="">
         </div>
-        <div class="container-login__content">
+        <div class="container-signup__content">
             <img src="./imgs/avatar.svg" alt="" class="avatar">
             <h2>WELCOME</h2>
             <form action="POST" id="form-signup">
@@ -84,8 +84,8 @@
     <script src="./js/validator.js"></script>
 
     <script>
-        const formSigup = new Validator('#form-signup');
-        formSigup.onSubmit = function(formData) {
+        const formSignup = new Validator('#form-signup');
+        formSignup.onSubmit = function(formData) {
             console.log(formData)
         }
     </script>
