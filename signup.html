@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <img class="wave" src="./imgs/wave.png" alt="">
+    <div class="container-login">
+        <div class="img">
+            <img src="./imgs/bg.svg" alt="">
+        </div>
+        <div class="container-login__content">
+            <img src="./imgs/avatar.svg" alt="" class="avatar">
+            <h2>WELCOME</h2>
+            <form action="POST" id="form-signup">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-file-signature"></i>
+                        <input type="text" rules="required" name="fullname" id="fullname">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-wrapper">
+                        <i class="user-icon fas fa-user"></i>
+                        <input type="text" rules="required|username" name="username" id="username">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="student_code">Student Code</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user-graduate"></i>
+                        <input type="text" rules="required|username" name="student_code" id="student_code">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" rules="required|email" name="email" id="email">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock-alt"></i>
+                        <input type="password" rules="required|min:6|max:20" name="password" id="password">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock-alt"></i>
+                        <input type="password" rules="required|confirm" name="confirm_password" id="confirm_password">
+                    </div>
+                    <span class="form-message"></span>
+                </div>
+                <div class="handle-form">
+                    <a href="./login.html" class="login-account">Login</a>
+                    <div class="handle-password">
+                        <input type="checkbox">
+                        <span>Show Password</span>
+                    </div>
+                </div>
+                <button type="submit" class="form-submit">SIGNUP</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="./js/validator.js"></script>
+
+    <script>
+        const formLogin = new Validator('#form-signup');
+        formLogin.onSubmit = function(formData) {
+            console.log(formData)
+        }
+    </script>
+</body>
+
+</html>
