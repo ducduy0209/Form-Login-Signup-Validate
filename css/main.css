@@ -176,6 +176,11 @@ a:hover {
     .container-login .img {
         display: none;
     }
+    .container-signup,
+    .container-login {
+        height: unset;
+        padding: 1rem 2.2rem;
+    }
     .container-signup__content,
     .container-login__content {
         width: 100%;
