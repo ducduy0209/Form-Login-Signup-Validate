@@ -7,6 +7,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* #38d39f */
 
@@ -25,7 +29,7 @@
     height: 100vh;
     display: flex;
     grid-gap: 7rem;
-    padding: 0 2.2rem;
+    padding: 2rem 2.2rem;
 }
 
 .img {
@@ -187,9 +191,17 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 23.6875em) {
+@media screen and (max-width: 24.875em) {
     form {
-        width: 300px;
+        width: 296px;
+    }
+    .container-login__content {
+        height: 100vh;
+    }
+    .main {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
     }
 }
 

@@ -11,39 +11,41 @@
 </head>
 
 <body>
-    <img class="wave" src="./imgs/wave.png" alt="">
-    <div class="container-login">
-        <div class="img">
-            <img src="./imgs/bg.svg" alt="">
-        </div>
-        <div class="container-login__content">
-            <img src="./imgs/avatar.svg" alt="" class="avatar">
-            <h2>WELCOME</h2>
-            <form action="POST" id="form-login">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <div class="input-wrapper">
-                        <i class="user-icon fas fa-user"></i>
-                        <input type="text" rules="required|username" name="username" id="username">
+    <div class="main">
+        <img class="wave" src="./imgs/wave.png" alt="">
+        <div class="container-login">
+            <div class="img">
+                <img src="./imgs/bg.svg" alt="">
+            </div>
+            <div class="container-login__content">
+                <img src="./imgs/avatar.svg" alt="" class="avatar">
+                <h2>WELCOME</h2>
+                <form action="POST" id="form-login">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-wrapper">
+                            <i class="user-icon fas fa-user"></i>
+                            <input type="text" rules="required|username" name="username" id="username">
+                        </div>
+                        <span class="form-message"></span>
                     </div>
-                    <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-lock-alt"></i>
-                        <input type="password" rules="required|min:6|max:20" name="password" id="password">
-                        <i class="show-password password-icon fas fa-eye"></i>
-                        <i class="hide-password password-icon fas fa-eye-slash" style="display: none;"></i>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock-alt"></i>
+                            <input type="password" rules="required|min:6|max:20" name="password" id="password">
+                            <i class="show-password password-icon fas fa-eye"></i>
+                            <i class="hide-password password-icon fas fa-eye-slash" style="display: none;"></i>
+                        </div>
+                        <span class="form-message"></span>
                     </div>
-                    <span class="form-message"></span>
-                </div>
-                <div class="handle-form">
-                    <a href="./signup.html" class="signup-account">Sign Up</a>
-                    <a href="#" class="forgot-password">Forgot Password?</a>
-                </div>
-                <button type="submit" class="form-submit">LOGIN</button>
-            </form>
+                    <div class="handle-form">
+                        <a href="./signup.html" class="signup-account">Sign Up</a>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="form-submit">LOGIN</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/main.js"></script>
